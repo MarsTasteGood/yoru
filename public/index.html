@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="おめでとうを、開けるたのしみに。友だちのメッセージが誕生日の0時にひらく、あなただけのバースデーボード。">
+  <title>yoru — 0時にひらく、きみへのおめでとう。</title>
+  <link rel="icon" type="image/svg+xml" href="/art/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="yoru ホーム">yoru<span class="brand-spark">✳</span><span class="brand-caption">a little birthday magic.</span></a>
+    <nav aria-label="メインナビゲーション">
+      <button class="nav-link active" data-action="home">ボード</button>
+      <button class="nav-link" data-action="memories">思い出<span class="nav-dot"></span></button>
+      <button class="nav-link how-nav" data-action="how">使いかた</button>
+    </nav>
+    <button class="button button-small dark" data-action="create"><span aria-hidden="true">＋</span> ボードをつくる</button>
+  </header>
+  <main id="app" tabindex="-1"><div class="loading">ボードを準備しています…</div></main>
+  <footer class="site-footer"><a class="footer-brand" href="/">yoru ✳</a><span>一年に一度の言葉を、何度でも。</span><button data-action="about">このプロトタイプについて ↗</button></footer>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div id="confetti" aria-hidden="true"></div>
+</body>
+</html>
